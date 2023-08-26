@@ -1,0 +1,339 @@
+body{
+     overflow-x: hidden;
+}
+header {
+width: 96%;
+position: fixed;
+background-color: rgba(0, 0, 0, 0.501);
+color: white;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+padding: 15px 0;
+border-radius: 50px;
+z-index: 1000;
+}
+.navbar label i{
+    color: white;
+}
+.navbar input{
+    display: none;
+}
+.navbar label{
+    display: none;
+}
+.navbar ul{
+ display: flex;
+ list-style: none;
+ position: relative;
+ top: 15px;
+}
+.navbar ul a{
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    margin: 0 12px;
+}
+@media (max-width:1200px) {
+    .navbar ul {
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+    transform: translateX(-100%);
+    transition: .3s;
+    z-index: 10;
+    }
+    .navbar ul li {
+        margin: 15px 0;
+    }
+    .navbar ul li a{
+        color: black;
+    }
+    
+    .navbar label{
+        font-size: 50px;
+          display: block;
+          position: relative;
+       left: -40px;
+       top: 8px;
+    }
+    .INP:checked ~ ul {
+        transform: translateX(0%);
+    }
+    }
+.logo {
+    font-size: 30px;
+}
+.logo i{
+    color: deeppink;
+}
+.slec1 {
+    min-height: 100vh;
+    background: linear-gradient( rgba(198, 59, 250, .8), rgba(198, 59, 250, .8)), url(./img/section.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+    background-attachment: fixed;
+}
+.title-home{
+    padding-top: 250px;
+    color: #fff;
+}
+.title-home h1 {
+    font-size: 40px;
+    margin:  0 0 25px 0;
+}
+.title-home p{
+    font-size: 28px;
+}
+.btn-home {
+    width: 270px;
+    height: 50px;
+    background-color: deeppink;
+    color: white;
+    padding: 4px 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 28px;
+}
+.slec1 .col-12 {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 50px 20px;
+    margin-top: 100px;
+    
+    box-shadow: 1px 8px 5px 1px rgba(105, 105, 105, 0.597);
+}
+
+.slec1 .col-12 h2{
+    color: rgb(255, 0, 123);
+}
+.slec1 .col-12 button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    color: white;
+    font-size: 30px;
+}
+.box-home {
+    position: relative;
+    
+}
+.slec1 .col-12:hover h2{
+    color: deeppink;
+}
+.slec1 .col-12:hover button{
+    background-color: blueviolet;
+    border: none;
+}
+.slec1::before{
+    content: "";
+    width: 120%;
+    background-color: #fff;
+    border-bottom: solid 300px #fff;
+    border-radius: 70%;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;  
+    z-index: -1;   
+}
+.slec2 {
+    padding: 50px 0;
+}
+.slec2 .col-12 h1{
+ font-size: 40px;
+ color: deeppink;
+}
+.slec2  p {
+    color: rgba(105, 105, 105, 0.482);
+}
+.slec2 .col-6 h2 {
+    font-size: 27px;
+    color: deeppink;
+}
+.slec2 .col-6 button{
+    width: 170px;
+    height: 30px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 5px 5px 1px rgba(105, 105, 105, 0.597);
+}
+.slec3 {
+    padding: 40px 0;
+    background-color: #F9F9F9;
+}
+.slec3 h1,h2,i {
+ color: deeppink;
+}
+.slec3 p{
+    color: rgba(105, 105, 105, 0.482);
+}
+.slec3 .col-12 h1 {
+    font-size: 40px;
+}
+.slec3 .col-4 {
+    border: 25px solid #F9F9F9;
+    background-color: #fff;
+   
+}
+.slec3 i{
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+.cont{
+    display: none;
+}
+.slec3 .col-4:hover img{
+ display: none;
+}
+.slec3 .col-4:hover .cont{
+    display: block;
+}
+.slec3 .col-4:hover h2{
+    position: relative;
+    top: 4px;
+}
+.slec3 .col-4:hover p{
+    position: relative;
+    top: 4px;
+}
+.slec3 .col-4:hover i{
+    position: relative;
+    top: 4px;
+}
+.slec4 .col-12 h1{
+    font-size: 40px;
+    color: deeppink;
+    margin: 10px 0;
+}
+.slec4 p{
+    color: rgba(105, 105, 105, 0.606);
+}
+.slec4 .col-3 {
+    margin: 20px 45px;
+    box-shadow: 5px 5px 8px 2px blueviolet;
+    padding: 20px 0;
+}
+.slec4 .col-3 button{
+    width: 60px;
+    height: 60px;
+    border: 8px solid transparent;
+    border-left-color: deeppink;
+    border-right-color: deeppink;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 30px;
+}
+.slec5{
+    background-color: #F9F9F9;
+}
+.slec5 .col-3 {
+    background-color: white;
+    box-shadow: 1px 5px 5px 1px rgba(105, 105, 105, 0.597);
+    margin: 70px 0;
+}
+.slec5 .col-12 p{
+    color: rgba(105, 105, 105, 0.551);   
+       }
+.slec5 .col-12 h1 {
+    font-size: 40px;
+    color: deeppink;
+}
+.slec5 .col-3 h2{
+ color: deeppink;
+ position: relative;
+    bottom: 20px;
+}
+.slec5 .col-3 p{
+ color: rgba(105, 105, 105, 0.551);   
+ position: relative;
+    bottom: 20px;
+}
+.slec5 .col-3 i{
+    color: blueviolet;
+ position: relative;
+    bottom: 20px;
+}
+
+.slec5 .col-3 button{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid;
+    border-top-color: deeppink;
+    border-right-color: deeppink;
+    border-bottom-color: blueviolet;
+    border-left-color: blueviolet;
+    position: relative;
+    top: -30px;
+}
+.slec5 .col-3 button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.slec6 {
+    background-color: rgb(30, 29, 29);
+    color: white;
+    padding: 50px 0;
+}
+.slec6 .col-12 h1 {
+    font-size: 40px;
+    color: deeppink;
+}
+.slec6 .col-6 input {
+    width: 500px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.slec6 textarea {
+    border-radius: 8px;
+}
+.slec6 .col-6 button {
+    width: 160px;
+    height: 40px;
+    color: white;
+    background-color: deeppink;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+}
+.slec7 {
+    padding: 30px 0;
+}
+.slec7 .col-12 button{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 3px solid blueviolet;
+    border-radius: 50%;
+    margin: 0 2px;
+    font-size: 40px;
+}
+.slec7 .col-12 i{
+    color: blueviolet;
+}
+.slec7 span {
+    color: deeppink;
+}
